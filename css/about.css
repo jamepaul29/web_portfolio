@@ -1,0 +1,248 @@
+ ============================ CSS Reset ============================ */
+* { /*for resetting margin, padding and box-sizing*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ==================================================================== */
+/* ============================ NAV BAR START ========================= */
+/* ==================================================================== */
+
+#navbarIcon {
+  	overflow: hidden; /* control picture overflow */
+	width: 3rem;
+	height: 3rem;
+  	border: 1px solid gray;
+	border-radius: 10px;
+}
+
+.icon_size {
+	width: 3rem;
+	height: 3rem;
+	transition: transform 1s; /* Transition */
+}
+
+#navbarIcon:hover .icon_size { transform: scale(1.4); }
+
+.nav_bgc { background-color: rgba(0, 0, 0, .4); }
+
+#navbarNav > ul > li {
+	padding-left: .5rem;
+	padding-right: .5rem;
+	font-size: 1.5rem;
+}
+
+/* ==================================================================== */
+/* ============================ NAV BAR  END  ========================= */
+/* ==================================================================== */
+
+
+/* ==================================================================== */
+/* ============================ BODY START ============================ */
+/* ==================================================================== */
+
+body {
+	background-color: black;
+	/*font-family: 'Merriweather', serif;
+	font-family: 'Righteous', cursive;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Tilt Warp', cursive;*/
+	font-family: 'Righteous', cursive;
+}
+
+.bg_vid {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+}
+
+#about_intro {
+	padding-top: 4.5rem;
+}
+
+#p_Hi ,#p_Name ,#p_Decs1 ,#p_Decs2{
+	/*font-family: 'Merriweather', serif;*/
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+#p_Hi { 
+	font-size: 1rem;
+	color: cyan;
+	text-shadow: 2px 2px darkcyan ;
+}
+
+#p_Name { font-size: 2rem; }
+
+#p_Decs1 {
+	font-size: 2rem;
+	opacity: 80%;
+}
+
+#p_Decs2 {
+	font-size: 1rem;
+	opacity: 80%;
+}
+
+#arrowDown {
+	padding-top: 5rem;
+	font-size: 7rem;
+}
+
+#second_sec {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	padding-bottom: 5rem;
+}
+
+/*#second_sec > div > div {
+	box-shadow:
+    -25px -25px 0 -20px var(--gray),
+    25px 25px 0 -20px var(--gray);
+}*/
+
+.p_sec p{
+	margin: 0;
+}
+
+/* ==================================================================== */
+/* ============================  BODY END  ============================ */
+/* ==================================================================== */
+
+/* ==================================================================== */
+/* ============================ FOOTER START ========================== */
+/* ==================================================================== */
+
+.footer_bgc { background-color: rgba(0, 0, 0, .4); }
+
+.footer a{
+	font-size: 2.5rem;
+	padding-left: 10px ;
+	padding-right: 10px;
+	color: gray;
+	height: 50px;
+}
+
+	.fab:hover { /* ----- FB and LinkedIn icon ----- */
+		transition-duration: 1s; /* smooth transition of color */
+		color: #4267B2;
+	}
+
+	.lkI:hover { /* ----- FB and LinkedIn icon ----- */
+		transition-duration: 1s; /* smooth transition of color */
+		color: skyblue;
+	}
+
+	.gtL:hover {/* ----- GitLab icon ----- */
+		transition-duration: 1s;
+		color: lightsalmon;
+	}
+
+	.gml:hover { /* ----- Mail icon ----- */
+		transition-duration: 1s;
+		color: lightgreen;
+	}
+
+	.fab, .lkI , .gtL , .gml{
+		transition: transform 0.25s; /* Transition */
+	  	overflow: hidden; /* controls image overflow */
+	}
+
+	.fab:hover, .lkI:hover , .gtL:hover , .gml:hover{
+	  transform: scale(1.3);
+	}
+
+/* ==================================================================== */
+/* ============================  FOOTER END  ========================== */
+/* ==================================================================== */
+
+
+/* ******************************************************************** */
+/* ******************  Mobile First Approach START  ******************* */
+/* ******************************************************************** */
+
+	/* Small Devices */
+		@media (min-width: 576px){
+			main {
+				margin-top: 1.5rem;
+			}
+
+			#p_Hi { 
+				font-size: 1rem;
+				color: cyan;
+				text-shadow: 2px 2px darkcyan ;
+			}
+
+			#p_Name { font-size: 2rem; }
+
+			#p_Decs1 {
+				font-size: 2rem;
+				opacity: 80%;
+			}
+
+			#p_Decs2 {
+				font-size: 1rem;
+				opacity: 80%;
+			}
+
+		}
+
+		/* Medium Devices */
+		@media (min-width: 768px) {
+		  	main {
+				margin-top: 2rem;
+			}
+
+			#p_Hi { 
+				font-size: 1.5rem;
+				color: cyan;
+				text-shadow: 2px 2px darkcyan ;
+			}
+
+			#p_Name { font-size: 3rem; }
+
+			#p_Decs1 {
+				font-size: 3rem;
+				opacity: 80%;
+			}
+
+			#p_Decs2 {
+				font-size: 1rem;
+				opacity: 80%;
+			}
+		}
+
+		/* Large Devices */
+		@media (min-width: 992px) {
+		  	main {
+		  		margin-top: 2rem;
+		  	}
+
+		  	#p_Hi { 
+				font-size: 1.5rem;
+				color: cyan;
+				text-shadow: 2px 2px darkcyan ;
+
+			}
+
+			#p_Name { font-size: 3rem; }
+
+			#p_Decs1 {
+				font-size: 3rem;
+				opacity: 80%;
+			}
+
+			#p_Decs2 {
+				font-size: 1rem;
+				opacity: 80%;
+			}
+		}
+
+/* ******************************************************************** */
+/* *******************  Mobile First Approach END  ******************** */
+/* ******************************************************************** 
